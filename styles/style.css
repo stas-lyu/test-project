@@ -1,0 +1,377 @@
+body {
+    font-family: sans-serif;
+}
+
+section {
+    margin-top: 50px;
+}
+
+.container {
+    padding: 0 35px;
+}
+
+.header {
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/images/bg.png);
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo {
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+
+.title-container {
+    width: 540px;
+    color: #ffffff;
+}
+
+.main-title {
+    font-size: 45px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+.main-subtitle {
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.title-button {
+    margin-top: 35px;
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #2FD2B0;
+}
+
+.section-title {
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 430px;
+}
+
+.card img {
+    height: 75px;
+    width: 65px;
+}
+
+.why-we {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2FD2B0;
+}
+
+.why-we_description {
+    background-color: #2FD2B0;
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-us_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-side {
+
+}
+
+.right-side {
+
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.subname {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.calendar {
+    background-color: #0A1034;
+}
+
+.calendar h2 {
+    color: #ffffff;
+    font-weight: 100;
+    padding: 60px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calendly {
+    /*width: 800px;*/
+    height: 560px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #ffffff;
+    align-items: center;
+}
+
+.info p {
+    flex-basis: 40%;
+}
+
+.info:before {
+    content: url("logo.png");
+}
+
+.info span {
+    font-weight: bold;
+    padding: 90px 0;
+}
+
+.person {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-right: 1px solid gray;
+}
+
+.person-description {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.person-description:before {
+    content: 'Bridgette Avancena';
+    font-size: 16px;
+    color: #65686C;
+}
+
+.person-description:after {
+    display: flex;
+    align-items: center;
+    content: url("clock.png") " 30 min";
+    font-size: 16px;
+    color: #65686C;
+}
+
+.date {
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 100;
+    position: relative;
+}
+
+.powered {
+    position: absolute;
+    height: 105px;
+    width: 105px;
+    top: 0;
+    right: 0;
+    background-image: url(../assets/images/li.png);
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+}
+
+.powered:after {
+    content: "POWERD BY calendly";
+    color: #ffffff;
+    transform: rotate(45deg);
+    display: inline-block;
+    width: 70px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    position: absolute;
+    font-size: 10px;
+    top: 28px;
+    right: 0;
+}
+
+.month {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.arrow span:hover {
+    color: #2FD2B0;
+}
+
+.event-date {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.date-calendar {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    background-color: rgba(47, 210, 176, 0.15);
+    border-radius: 50%;
+}
+
+.select-date {
+    border: none;
+    font-weight: 100;
+}
+
+label:before {
+    content: url("world.png");
+    height: 15px;
+    width: 15px;
+}
+
+@media (max-width: 574.98px){
+    .service-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-title {
+        font-size: 28px;
+        width: 100%;
+    }
+    .calendly {
+        width: 100%;
+    }
+    .calendar h2 {
+        width: 100%;
+    }
+    .powered {
+        top: -200px;
+        right: 15px;
+    }
+    .powered:after {
+        font-size: 10px;
+    }
+    .person {
+        border-right: 0;
+        border-bottom: 1px solid gray;
+    }
+    .info {
+        flex-direction: column;
+        font-size: 14px;
+        padding-bottom: 40px;
+    }
+    .month {
+        margin-bottom: 30px;
+    }
+    .why-we {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-us_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .why-we_description {
+        margin-left: 0;
+    }
+    .title-container {
+        width: 294px;
+    }
+    .main-title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .calendly{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        width: 100%;
+    }
+    .why-we_description {
+        width: 100%;
+    }
+}
+
+@media (min-width: 575.98px){
+    .container {
+        max-width: 540px;
+        margin: auto;
+        padding: 0;
+    }
+    .main-title {
+        font-size: 30px;
+    }
+    .main-subtitle {
+        font-size: 16px;
+    }
+    .main-subtitle p:last-child {
+        display: none;
+    }
+    .why-we_description {
+        padding: 0 2%;
+    }
+    .why-we img {
+        height: 100%;
+    }
+}
+
+@media (min-width: 767.98px){
+    .container {
+        max-width: 720px;
+    }
+    .section-title {
+        font-size: 35px;
+    }
+    .card {
+        width: 210px;
+    }
+    .main-title {
+        font-size: 30px;
+    }
+    .main-subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1199.98px){
+    .container {
+        max-width: 1140px;
+    }
+}
